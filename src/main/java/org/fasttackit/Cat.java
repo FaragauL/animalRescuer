@@ -1,9 +1,14 @@
 package org.fasttackit;
 
-public class Cat {
+public class Cat extends Animals {
 
-    String name;
-    double age;
-    String color;
+    private String color;
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }

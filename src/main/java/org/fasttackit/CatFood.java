@@ -1,8 +1,14 @@
 package org.fasttackit;
 
-public class CatFood {
+public class CatFood extends Food {
 
-    double quantity;
-    String name;
-    String taste;
+    private String taste;
+
+    public String getTaste() {
+        return taste;
+    }
+
+    public void setTaste(String taste) {
+        this.taste = taste;
+    }
 }

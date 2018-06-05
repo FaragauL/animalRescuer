@@ -1,8 +1,15 @@
 package org.fasttackit;
 
-public class DogFood {
+public class DogFood extends Food{
 
-    double price;
-    double quantity;
-    String name;
+    private String manufacturer;
+    private String name;
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
 }

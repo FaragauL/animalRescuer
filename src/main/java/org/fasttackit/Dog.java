@@ -1,10 +1,15 @@
 package org.fasttackit;
 
-public class Dog {
+public class Dog extends Animals {
 
-    String name;
-    Double age;
-    String healthContition;
-    String breed;
-    int feedingTimes;
+    private String breed;
+
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 }
