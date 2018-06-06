@@ -4,7 +4,8 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Game {
+public class Game
+{
 
     private Animals dog1;
     private Animals cat1;
@@ -19,12 +20,13 @@ public class Game {
         return availableActivities;
     }
 
-    private void initFood() {
-        availableFood.add(new Food("Pedigree"));
-        availableFood.add(new Food("Purina"));
+    private void initFood(Food food1, Food food2) {
+        availableFood.add(food1);
+        availableFood.add(food2);
     }
 
-    public void start() {
+    public void start()
+    {
 
         Dog dog1 = new Dog("Puppy");
         dog1.setName("Puppy");
@@ -55,6 +57,10 @@ public class Game {
         dogFood1.setQuantity(500);
 
         Food food = new Food("Pedigree");
+        Food food1 = new Food("Purina");
+        initFood(food, food1);
+        for (Food item : availableFood)
+            System.out.println(item);
 
         EntertainmentActivity entertainmentActivity1 = new EntertainmentActivity("WonderWoof");
         EntertainmentActivity entertainmentActivity2 = new EntertainmentActivity("Trixie");
@@ -62,6 +68,6 @@ public class Game {
 
         rescuer1.feed(dog1, dogFood1);
         rescuer1.entertainment(dog1, entertainmentActivity1);
-        System.out.println(getAvailableFood(initFood()));
+
     }
 }
