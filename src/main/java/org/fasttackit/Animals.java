@@ -7,6 +7,15 @@ public class Animals {
     private int feedingTimes;
     private String favoriteFoodName;
     private String favoriteActivityName;
+    private double hungerLevel;
+
+    public double getHungerLevel() {
+        return hungerLevel;
+    }
+
+    public void setHungerLevel(double hungerLevel) {
+        this.hungerLevel = hungerLevel;
+    }
 
     public String getName() {
         return name;

@@ -6,6 +6,11 @@ public class Rescuer {
     private double money;
     private double age;
 
+    public void feed(Animals animal, Food food) {
+        animal.setHungerLevel(animal.getHungerLevel() - 1);
+        System.out.println(name+ " " + "just gave some" + food.getName()+ " " + " food to " + animal.getName());
+    }
+
     public String getName() {
         return name;
     }

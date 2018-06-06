@@ -1,9 +1,13 @@
 package org.fasttackit;
 
-public class DogFood extends Food{
+public class DogFood extends Food {
 
     private String manufacturer;
-    private String name;
+
+    public DogFood(String name) {
+        super(name);
+    }
+
 
     public String getManufacturer() {
         return manufacturer;
