@@ -4,10 +4,15 @@ public class Animals {
 
     private String name;
     private double age;
-    private int feedingTimes;
+    private double height;
+    private String sex;
     private String favoriteFoodName;
     private String favoriteActivityName;
     private double hungerLevel;
+
+    public Animals(String name) {
+        this.name = name;
+    }
 
     public double getHungerLevel() {
         return hungerLevel;
@@ -33,14 +38,6 @@ public class Animals {
         this.age = age;
     }
 
-    public int getFeedingTimes() {
-        return feedingTimes;
-    }
-
-    public void setFeedingTimes(int feedingTimes) {
-        this.feedingTimes = feedingTimes;
-    }
-
     public String getFavoriteFoodName() {
         return favoriteFoodName;
     }
@@ -55,5 +52,21 @@ public class Animals {
 
     public void setFavoriteActivityName(String favoriteActivityName) {
         this.favoriteActivityName = favoriteActivityName;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 }

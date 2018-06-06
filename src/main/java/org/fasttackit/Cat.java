@@ -4,6 +4,10 @@ public class Cat extends Animals {
 
     private String color;
 
+    public Cat(String name) {
+        super(name);
+    }
+
     public String getColor() {
         return color;
     }
