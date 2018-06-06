@@ -10,7 +10,7 @@ public class Game
     private Animals dog1;
     private Animals cat1;
     private List<Food> availableFood = new ArrayList<Food>();
-    private EntertainmentActivity[] availableActivities = new EntertainmentActivity[5];
+    private EntertainmentActivity[] availableActivities = new EntertainmentActivity[2];
 
     public List<Food> getAvailableFood() {
         return availableFood;
@@ -23,6 +23,10 @@ public class Game
     private void initFood(Food food1, Food food2) {
         availableFood.add(food1);
         availableFood.add(food2);
+    }
+    private void initActivities(EntertainmentActivity activity1, EntertainmentActivity activity2){
+        availableActivities[0] = activity1;
+        availableActivities[1] = activity2;
     }
 
     public void start()
@@ -60,14 +64,16 @@ public class Game
         Food food1 = new Food("Purina");
         initFood(food, food1);
         for (Food item : availableFood)
-            System.out.println(item);
+            System.out.println(item.getName());
 
         EntertainmentActivity entertainmentActivity1 = new EntertainmentActivity("WonderWoof");
         EntertainmentActivity entertainmentActivity2 = new EntertainmentActivity("Trixie");
+        initActivities(entertainmentActivity1, entertainmentActivity2);
+        for (EntertainmentActivity item : availableActivities)
+            System.out.println(item.getName());
 
 
         rescuer1.feed(dog1, dogFood1);
         rescuer1.entertainment(dog1, entertainmentActivity1);
-
-    }
+          }
 }
