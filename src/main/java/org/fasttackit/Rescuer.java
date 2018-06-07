@@ -10,11 +10,14 @@ public class Rescuer {
 
 
     public void feed (Animals animal, Food food) {
+        animal.setHungerLevel(42.6);
         System.out.println("Hungry level is: " + animal.getHungerLevel());
-        readName("Enter food quantity: ");
-        double foodQuantity = food.getQuantity();
         System.out.println(name + " " + "just gave some " + food.getName()+ " " + " food to " + animal.getName());
-        animal.setHungerLevel(animal.getHungerLevel() - 1);
+        System.out.println("Enter food quantity: ");
+        Scanner scanner = new Scanner(System.in);
+        double foodQuantity = scanner.nextDouble();
+        animal.setHungerLevel(animal.getHungerLevel()-foodQuantity);
+        System.out.println("New hungry level is: " + animal.getHungerLevel());
 
 
     }
