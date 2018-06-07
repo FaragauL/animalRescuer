@@ -9,6 +9,8 @@ public class Animals {
     private String favoriteFoodName;
     private String favoriteActivityName;
     private double hungerLevel;
+    private double activityLevel;
+    public Animals animals;
 
     public Animals(String name) {
         this.name = name;
@@ -68,5 +70,31 @@ public class Animals {
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+    public Animals getAnimals() {
+        return animals;
+    }
+
+    public void setAnimals(Animals animals) {
+        this.animals = animals;
+    }
+
+    public double getActivityLevel() {
+        return activityLevel;
+    }
+
+    public void setActivityLevel(double activityLevel) {
+        this.activityLevel = activityLevel;
+    }
+
+    @Override
+    public String toString() {
+        return "Animals{" +
+                "Age=" + age +
+                ", Height=" + height +
+                ", Sex='" + sex + '\'' +
+                ", FavoriteFoodName='" + favoriteFoodName + '\'' +
+                ", FavoriteActivityName='" + favoriteActivityName + '\'' +
+                ", HungerLevel=" + hungerLevel;
     }
 }

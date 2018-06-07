@@ -1,6 +1,5 @@
 package org.fasttackit;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,14 +10,6 @@ public class Game
     private Animals cat1;
     private List<Food> availableFood = new ArrayList<Food>();
     private EntertainmentActivity[] availableActivities = new EntertainmentActivity[2];
-
-    public List<Food> getAvailableFood() {
-        return availableFood;
-    }
-
-    public EntertainmentActivity[] getAvailableActivities() {
-        return availableActivities;
-    }
 
     private void initFood(Food food1, Food food2) {
         availableFood.add(food1);
@@ -37,7 +28,7 @@ public class Game
         dog1.setAge(1.2);
         dog1.setHeight(2.5);
         dog1.setSex("F");
-        dog1.setBreed("Poodle");
+        dog1.setSpecies("Poodle");
         dog1.setFavoriteFoodName("Purina");
         dog1.setFavoriteActivityName("WonderWoof");
 
@@ -76,4 +67,12 @@ public class Game
         rescuer1.feed(dog1, dogFood1);
         rescuer1.entertainment(dog1, entertainmentActivity1);
           }
+
+    public List<Food> getAvailableFood() {
+        return availableFood;
+    }
+
+    public EntertainmentActivity[] getAvailableActivities() {
+        return availableActivities;
+    }
 }
