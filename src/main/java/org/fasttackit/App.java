@@ -3,8 +3,8 @@ package org.fasttackit;
 public class App 
 {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.start();
+        Game1 game1 = new Game1();
+        game1.start();
 
     }
 }

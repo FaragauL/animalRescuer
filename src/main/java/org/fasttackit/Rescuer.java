@@ -18,12 +18,11 @@ public class Rescuer {
         double foodQuantity = scanner.nextDouble();
         animal.setHungerLevel(animal.getHungerLevel()-foodQuantity);
         System.out.println("New hungry level is: " + animal.getHungerLevel());
-
-
     }
+
     public void entertainment (Animals animal, EntertainmentActivity entertainmentActivity){
+        System.out.println("Activity level is: " + animal.getActivityLevel());
         System.out.println(name + " " + "just play with " + animal.getName() + " " +entertainmentActivity.getName() );
-        double currentActivityLevel = animal.getActivityLevel();
     }
     private String readName( String s) {
         System.out.println(s);

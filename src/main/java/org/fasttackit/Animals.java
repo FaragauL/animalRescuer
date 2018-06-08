@@ -89,7 +89,7 @@ public class Animals {
 
     @Override
     public String toString() {
-        return "Animals{" +
+        return name +
                 "Age=" + age +
                 ", Height=" + height +
                 ", Sex='" + sex + '\'' +

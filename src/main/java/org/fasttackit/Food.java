@@ -1,10 +1,14 @@
 package org.fasttackit;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Food {
 
     private double price;
     private double quantity;
     private String name;
+
 
     public Food(String name) {
         this.name = name;
